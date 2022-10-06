@@ -4,18 +4,134 @@
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
     <title>Login do usuario</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    width:  100%;
+    justify-content: space-between;
+    padding: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient( to right, blue , blue, blue, white ,white);
+    align-items: center;
+}
+
+.header-nome-empresa {
+    font-family: 'Ubuntu', sans-serif; 
+    color: white;
+    font-size: 48px;
+}
+
+img {
+    position: absolute;
+width: 231px;
+height: 98px;
+left: calc(50% - 231px/2 + 597.5px);
+}
+
+.bemvindo {
+    font-family: "ubuntu", sans-serif; 
+    font-size: 30px;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 200;
+}
+
+.nome-empresa {
+    font-family: "ubuntu", sans-serif; 
+    font-size: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.main-text {
+    font-family: "ubuntu", sans-serif; 
+    font-size: 30px;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 7%;
+    font-weight: 200px;
+}
+
+.main-password {
+    margin-left: 5%;
+    margin-right: 2%;
+    font-size: 30px;
+    font-family: "ubuntu", sans-serif; 
+    font-weight: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.main-button {
+    font-size: 30px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background-color: rgb(19, 43, 222);
+    color: white;
+    transition: 0.3s all;
+}
+
+.main-informacao {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    font-family: "ubuntu", sans-serif; 
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+h4 {
+    font-weight: 200;
+    margin: 0;
+}
+
+footer {
+    justify-content: space-between;
+    display: flex;
+    padding: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(19, 43, 222);
+    align-items: center;
+    color: white;
+    font-family: "ubuntu", sans-serif;
+}
 </style>
 </head>
 <body>
+
     <header>
         <h1 class="header-nome-empresa">A B C  Comercial.</h1>
         <img src="http://h1.linhaverde.info:8800/abc_comercial/logo_empresa.jpg" alt="ABC Comercial">
     </header>
+
     <main>
+
         <div>
+
         <h2 class="bemvindo">Bem-vindo,</h2>
         <h2 class="nome-empresa">{NOMECLIENTE}</h2>
+
         </div>
+
         <div>
             <h2 class="main-text">Digite os 5 primeiros d&iacute;gitos do {TESTACNPJCPF} para receber boleto e/ou outros documentos.</h2>
 			<form method="POST">
@@ -23,6 +139,7 @@
             <input class="main-button" type="submit" value="Entrar" name="submit">
 	        </form>
         </div>
+
         <div class="main-informacao">
 		    <h4>O acesso ao boleto e arquivos ser&aacute; registrado.</h4><br>
             <h4>Para quaisquer d&uacute;vidas, contate nosso departamento de cobran&ccedil;a.</h4><br><br><br>
@@ -30,12 +147,15 @@
             <h4>Tel: (12) 3202-7820</h4>
             <h4>Email: <b>abccomercial1@gmail.com</b></h4>
         </div>
+
     </main>
+
     <footer>
         <h4>Rua Paraibuna, 258</h4>
         <h4>S&atilde;o Jos&eacute; dos Campos, SP</h4>
         <h4>(12) 3202-7820</h4>
         <h4>abccomercial1@gmail.com</h4>
     </footer>
+    
 </body>
 </html>

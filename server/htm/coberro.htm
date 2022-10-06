@@ -4,23 +4,82 @@
     <title>Exibir Erro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    width:  100%;
+    justify-content: space-between;
+    padding: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient( to right, blue , blue, blue, white ,white);
+    align-items: center;
+}
+
+.header-nome-empresa {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 48px;
+}
+
+img {
+    position: absolute;
+width: 231px;
+height: 98px;
+left: calc(50% - 231px/2 + 597.5px);
+}
+
+.bemvindo {
+    font-family: "ubuntu", sans-serif;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 200;
+}
+
+
+footer {
+    justify-content: space-between;
+    display: flex;
+    padding: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(19, 43, 222);
+    align-items: center;
+    color: white;
+    font-family: "ubuntu", sans-serif;
+}
 </style>
 </head>
 <body>
+
     <header>
         <h1 class="header-nome-empresa">A B C  Comercial.</h1>
         <img src="http://h1.linhaverde.info:8800/abc_comercial/logo_empresa.jpg" alt="A B C  Comercial.">
     </header>
+
     <main>
+
         <div>
+
         <h2 class="bemvindo">{ERRO}</h2>
         </div>
+
     </main>
+
     <footer>
         <h4>Rua Paraibuna, 258</h4>
         <h4>S&atilde;o Jos&eacute; dos Campos, SP</h4>
         <h4>(12) 3202-7820</h4>
         <h4>abccomercial1@gmail.com</h4>
     </footer>
+    
 </body>
 </html>
